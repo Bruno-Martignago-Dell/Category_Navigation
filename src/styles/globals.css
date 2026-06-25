@@ -1,0 +1,47 @@
+/* ── Scroller pill track ── */
+.cat-nav-track::-webkit-scrollbar { display: none; }
+.cat-nav-track { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Scroller pill states ── */
+.cat-nav-item:focus-visible {
+  outline: 2px solid var(--dds-color-border-focus-ring2);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--dds-color-border-focus-ring1),
+              0 0 0 6px var(--dds-color-border-focus-ring2);
+}
+.cat-nav-item:not([aria-selected="true"]):not(:disabled):hover {
+  background-color: var(--dds-color-background-neutral-subtle-hover) !important;
+}
+.cat-nav-item[aria-selected="true"]:hover {
+  background-color: var(--dds-color-background-brand-base-hover) !important;
+}
+
+/* ── Scroller chevron states ── */
+.cat-nav-chevron:focus-visible {
+  outline: 2px solid var(--dds-color-border-focus-ring2);
+  outline-offset: 2px;
+}
+.cat-nav-chevron:hover {
+  background-color: var(--dds-color-background-neutral-subtle-hover) !important;
+}
+
+/* ── Dropdown trigger states ── */
+.cat-nav-dropdown-trigger:hover {
+  background-color: var(--dds-color-background-brand-base-hover) !important;
+}
+.cat-nav-dropdown-trigger:focus-visible {
+  outline: 2px solid var(--dds-color-border-focus-ring2);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--dds-color-border-focus-ring1),
+              0 0 0 6px var(--dds-color-border-focus-ring2);
+}
+
+/* ── Dropdown menu row states ── */
+.cat-nav-menu-item:not([aria-selected="true"]):not(:disabled):hover {
+  background-color: var(--dds-color-background-brand-subtle-rest) !important;
+}
+.cat-nav-menu-item:focus-visible {
+  outline: 2px solid var(--dds-color-border-focus-ring2);
+  outline-offset: -2px;
+  background-color: var(--dds-color-background-brand-subtle-rest);
+}

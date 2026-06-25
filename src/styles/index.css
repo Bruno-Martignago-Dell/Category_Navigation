@@ -1,0 +1,14 @@
+/* Tailwind must come FIRST so its @layer theme,base,components,utilities
+   is registered before DDS adds global,semantic,component,theme layers.
+   This prevents the shared "theme" layer name from colliding. */
+@import './tailwind.css';
+
+/* DDS design system — tokens → fonts → components → icons */
+@import "@dds-v3/react/css/dds-tokens.css";
+@import "@dds-v3/react/css/dds-fonts.css";
+@import "@dds-v3/react/css/dds-components.css";
+@import "./fonts.css";
+@import "@dds-v3/react/css/dds-icons.css";
+
+/* Project globals */
+@import './globals.css';

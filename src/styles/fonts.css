@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "dds-icons";
+    font-style: normal;
+    font-weight: normal;
+    src: url("@dds-v3/react/icon/dds-icons.woff2") format("woff2"),
+         url("@dds-v3/react/icon/dds-icons.woff") format("woff");
+}
